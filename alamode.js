@@ -752,6 +752,7 @@ var alamode = {
 
   tableWithBars: function (o) {
     var uniqContainerClass = alamode.addContainerElement("body");
+    const queryName = o["query_name"];
 
     var data = alamode.getDataFromQuery(queryName),
       columns = alamode.getColumnsFromQuery(queryName);
