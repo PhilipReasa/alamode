@@ -796,7 +796,7 @@ var alamode = {
     tr.append("td")
       .attr("class", "data value")
       .text(function (d) {
-        return d;
+        return d.verified;
       });
 
     // Create a column at the beginning of the table for the chart
