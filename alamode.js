@@ -830,7 +830,7 @@ var alamode = {
       .duration(500)
       .style("width", function (d) {
         console.log("aaaadddddd", d);
-        return x(d.verified / d.new_respondents);
+        return d.verified / d.new_respondents;
       });
   },
 
