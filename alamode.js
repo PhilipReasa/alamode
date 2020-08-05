@@ -825,7 +825,9 @@ var alamode = {
 
     // Creates the positive div bar
     tr.select("div.positive")
-      .style("width", `${d.verified / d.new_respondents}%`)
+      .style("width", function (d) {
+        return `${d.verified / d.new_respondents}%`;
+      })
       .transition()
       .duration(500)
       .style("width", function (d) {
