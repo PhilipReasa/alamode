@@ -800,10 +800,7 @@ var alamode = {
       });
 
     // Create a column at the beginning of the table for the chart
-    var chart = tr
-      .append("td")
-      .attr("class", "chart")
-      .attr("width", chartWidth);
+    var chart = tr.append("td").attr("class", "chart").attr("width", 500);
 
     // Create the div structure of the chart
     chart
