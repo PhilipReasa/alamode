@@ -751,7 +751,7 @@ var alamode = {
   },
 
   tableWithBars: function (o) {
-    var uniqContainerClass = alamode.addContainerElement(htmlElement);
+    var uniqContainerClass = alamode.addContainerElement("body");
 
     var data = alamode.getDataFromQuery(queryName),
       columns = alamode.getColumnsFromQuery(queryName);
