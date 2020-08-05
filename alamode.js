@@ -820,8 +820,7 @@ var alamode = {
       .transition()
       .duration(500)
       .style("width", function (d) {
-        console.log("aaaadddddd", d);
-        return d[1] > 0 ? "0%" : x(Math.abs(d[1]));
+        return "0%";
       });
 
     // Creates the positive div bar
@@ -831,7 +830,7 @@ var alamode = {
       .duration(500)
       .style("width", function (d) {
         console.log("aaaadddddd", d);
-        return d[1] > 0 ? x(d[1]) : "0%";
+        return x(d.verified / d.new_respondents);
       });
   },
 
